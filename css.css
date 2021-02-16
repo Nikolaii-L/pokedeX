@@ -1,0 +1,82 @@
+body{
+    font-family: 'Patrick Hand', cursive;
+    background-color: rgb(144, 250, 250);
+
+
+}
+
+h1{
+    display: inline;
+    color: white;
+}
+
+.card{
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    box-shadow: 8px 8px 10px rgba(61, 59, 59, 0.5);
+    color: rgb(0, 0, 0);
+    border-style: double;
+
+}
+
+.card:hover {
+
+    animation: saltar 0.4s linear;
+}
+
+@keyframes saltar{
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-8px)
+    }
+
+    40% {
+        transform: translateY(0px)
+    }
+
+    60% {
+        transform: translateY(4px)
+    }
+
+    80% {
+        transform: translateY(0px)
+    }
+
+    90%{
+        transform: translateY(-2px);
+    }
+
+    100%{
+        transform: translateY(0)
+    }
+    
+    
+}
+#pokedex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.titulopoke{
+    left: 50%;
+    text-align: center; 
+    font-size: xx-large;
+    background-color: white;
+    width: 600px;
+    border-style: double;
+    
+    
+}
+
+.eldiv{
+    display: flex;
+    justify-content: center;
+   
+}
